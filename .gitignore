@@ -1,0 +1,45 @@
+# Model weights (too large for git — download separately)
+*.pth
+*.bin
+*.tar.gz
+*.zip
+
+# Whisper CT2 model blobs
+pashto_ct2_int8/model.bin
+dari_ct2_int8/model.bin
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# Cython compiled output
+monotonic_align/core*.so
+monotonic_align/core*.pyd
+
+# Node
+voice-app/node_modules/
+
+# Secrets — NEVER commit
+.env
+voice-app/.env
+
+# Editors & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Training-only code — not needed for inference
+Finalized_VITS2_Pashto_TTS/data_utils.py
+Finalized_VITS2_Pashto_TTS/losses.py
+Finalized_VITS2_Pashto_TTS/stft_loss.py
+
+# Claude internal
+.claude/
